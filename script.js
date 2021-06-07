@@ -1,0 +1,2 @@
+var imenik = new Imenik();
+

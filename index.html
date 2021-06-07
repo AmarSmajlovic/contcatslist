@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+  <body>
+      <div id="imenikContainer" class="d-flex flex-column">
+          <div  class="header d-flex flex-column justify-content-between align-items-center">
+              <div id="inputDiv" class="input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="search fas fa-search"></i>
+                </span>
+              </div>
+              <div id="containerNewContact" class="d-flex align-items-center justify-content-between">
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="ime"  placeholder="Ime Kontakta" onkeydown="imenik.dodajEnter(event)"/>
+                <input  id="broj" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Broj Kontakta" onkeydown="imenik.dodajEnter(event)"/>
+                <button type="button" id="dodaj" class="btn btn-outline-primary p-2">Dodaj</button>
+          </div>
+        </div>
+        <h4 class="text-center">Contact List</h4>
+        <div class="contacts">
+        </div>
+        
+      </div>
+
+
+    <script src="imenik.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
