@@ -63,16 +63,13 @@ function Imenik(){
                          var brojInput = document.querySelector('#broj');
                          brojInput.value = button.parentNode.parentNode.children[0].textContent;
                          buttonDodaj.innerText = 'EDIT';
-                         if(buttonDodaj.innerText = 'EDIT'){
+                         if(buttonDodaj.textContent = 'EDIT'){
                              buttonDodaj.addEventListener('click',function(){
                                 button.parentNode.parentNode.firstChild.textContent = imeInput.value;
                                 button.parentNode.parentNode.children[0].textContent = brojInput.value;
-                                buttonDodaj.innerText = 'EDIT';
-                                if(buttonDodaj.textContent = 'EDIT'){
-                                    button.parentNode.parentNode.firstChild.textContent = imeInput.value;
-                                    button.parentNode.parentNode.children[0].textContent = brojInput.value;
-                                    buttonDodaj.textContent = 'DODAJ';
-                                }
+                                buttonDodaj.innerText = 'DODAJ';
+                                 imeInput.value = '';
+                                 brojInput.value = '';
                              })
                          }
 
